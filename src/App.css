@@ -1,0 +1,79 @@
+.App {
+    text-align: center;
+}
+
+.display-time {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 60px 0px;
+}
+
+ul, li {
+    list-style: none; /*去掉列表默认样式*/
+    margin: 0px;
+    padding: 0px;
+}
+
+.Button {
+    width: 130px;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 4px;
+    /*圆角半径*/
+    background-color: lightgreen;
+    cursor: pointer; /*鼠标点击上是小手*/
+}
+
+.Botton:hover{
+    /*css3阴影*/
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+}
+.controls {
+    background: #eee;
+}
+
+.success {
+    background-color: lightgreen;
+}
+
+.warning {
+    background-color: gold;
+}
+
+.primary {
+    background-color: skyblue;
+}
+
+.undefined {
+    background-color: #e1e1e1;
+}
+
+.log {
+    text-align: center;
+    font-size: 30px;
+    color: #e1e1e1;
+}
+
+/*log和empty-log都会应用这个样式*/
+.log .empty-log {
+    display: inline-block;
+    /*因为span 是行内元素 行内元素设置padding无效 所以需要改成块级元素*/
+    padding: 50px 10px;
+}
+
+/*.log类下的li标签 */
+/*.log > li{*/
+.log-item {
+    font-size: 25px;
+    color: #000;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0px;
+}
+
+/*伪类*/
+/*悬浮*/
+.log-item:hover {
+    background-color: rgba(238, 238, 238, 0.5);
+}
